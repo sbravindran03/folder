@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Offer Letter</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 0.8s ease-in-out forwards;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 28px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        h1 img {
+            max-width: 100px;
+            margin-right: 15px;
+            border-radius: 8px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        ul {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #555;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li:before {
+            content: "\2022";  /* Add a bullet point using CSS */
+            color: #007bff;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 16px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .signature {
+            margin-top: 30px;
+            text-align: right;
+            font-size: 18px;
+            color: #555;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p,
+            ul,
+            .signature {
+                font-size: 14px;
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>
+            <img class="logo" src="./images/WhatsApp Image 2023-12-28 at 21.27.46_1a079f16.jpg" alt="Company Logo">
+            Internship Offer Letter
+        </h1>
+        
+        <p>Dear Mr. Rajan,</p>
+
+        <p>Congratulations on your selection for the "Web Development" internship position with Codad. We are thrilled to welcome you to our team.</p>
+
+        <ul>
+            <li>Your internship will span a duration of 4 weeks, commencing from November 5, 2023, to December 5, 2023. This opportunity is designed to be educational, with a primary focus on learning, skill development, and hands-on experience. We have full confidence in your ability to excel in all assigned tasks and projects.</li>
+            <li>During your internship, we expect you to approach your responsibilities with dedication and to adhere to all lawful and reasonable instructions provided to you.</li>
+            <li>We believe that this internship will contribute significantly to your professional growth, and we are eager to collaborate with you to help you achieve your career goals.</li>
+        </ul>
+
+        <p>Wishing you the best of luck in this exciting venture!</p>
+
+        <div class="signature">
+            <p>Best regards,</p>
+            <p>Your Name</p>
+            <p>Your Position</p>
+            <p>Codad</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
